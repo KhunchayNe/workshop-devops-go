@@ -1,7 +1,4 @@
 # Workshop DevOps !!
-```
-test commit
-```
 * API with [Go](https://golang.org/)
 * Docker
   * Build image with [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/)
