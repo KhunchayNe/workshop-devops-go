@@ -5,7 +5,7 @@ services:
     image: siwapun/demo-api
     user: "0:0"
     ports:
-      - 8000:1323
+      - 8090:1323
       
   db:
     image: postgres:14.0-alpine
@@ -23,9 +23,4 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-  api8080:
-    build: ./api
-    image: siwapun/demo-api
-    user: "0:0"
-    ports:
-      - 8080:1323
+  
