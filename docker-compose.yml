@@ -2,13 +2,13 @@ version: "3"
 services:
   api:
     build: ./api
-    image: somkiat/demo-api
+    image: siwapun/demo-api
     user: "0:0"
     ports:
       - 8000:1323
       
   db:
-    image: postgres:13
+    image: postgres:14.0-alpine
     container_name: db
     volumes:
       - ./db/seed.sql:/docker-entrypoint-initdb.d/seed.sql
